@@ -12,6 +12,6 @@ scikit-learn
 xgboost
 catboost
 Flask
-flask-ngrok
+git+https://github.com/gstaff/flask-ngrok
 gunicorn
 pyyaml==5.4.1
