@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot
 import plotly.graph_objs as go
 import plotly.figure_factory as ff
-init_notebook_mode(connected = True)
+init_notebook_mode(connected = False)
 
 from wordcloud import WordCloud
 
