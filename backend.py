@@ -32,6 +32,7 @@ import joblib
 def main(request):
   keyword, tweetcount = str(request.form['Keyword']), int(request.form['TweetCount'])
   
+  # using borrowed API from the workshop
   consumer_key        = 'kNm3NCo0JCbvaxMQmues1cVTa' # os.getenv('consumer_key')
   consumer_secret     = 'KMT1J4XH2Xz48qVnWGMMWNYefab6UJaEXvu32rEjixknlhDsvD' # os.getenv('consumer_secret')
   access_token        = '1435202232304082944-il5JLZKufbFzoDmWGiirQFyux1HB21' # os.getenv('access_token')
