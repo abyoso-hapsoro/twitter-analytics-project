@@ -6,10 +6,9 @@ import numpy as np
 import pandas as pd
 
 import matplotlib.pyplot as plt
-from plotly.offline import download_plotlyjs, init_notebook_mode, plot
+from plotly.offline import download_plotlyjs, plot
 import plotly.graph_objs as go
 import plotly.figure_factory as ff
-init_notebook_mode(connected = False)
 
 from wordcloud import WordCloud
 
