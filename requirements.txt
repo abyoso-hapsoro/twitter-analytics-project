@@ -1,0 +1,17 @@
+python-dotenv
+numpy
+pandas
+pandas-profiling
+matplotlib
+plotly
+wordcloud
+networkx
+tweepy
+Sastrawi
+scikit-learn
+xgboost
+catboost
+Flask
+flask-ngrok
+gunicorn
+pyyaml==5.4.1

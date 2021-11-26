@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style type='text/css'>
+    .body{min-height: 100vh}
+    .header-emoji{font-size: 50px}
+    .header-title{font-size: 38px}
+    .header-description{font-size: 16px}
+    .menu{margin: auto; width: 50%}
+    .menu form .inner-menu .input-field input{font-size: 14px}
+    .menu form .inner-menu .input-field.first-wrap{
+      padding: 16px;
+      font-size: 14px;
+      margin: 0 8px 0 16x;
+      display: inline-block
+    }
+    .menu form .inner-menu .input-field.second-wrap{
+      padding: 16px;
+      font-size: 14px;
+      margin: 0 8px 0 16x;
+      display: inline-block
+    }
+    .menu form .inner-menu .input-field.third-wrap{
+      padding: 16px;
+      font-size: 14px;
+      margin: 0 8px 0 16x;
+      display: inline-block
+    }
+    .menu form .inner-menu .input-field.third-wrap .btn-search{font-size: 14px}
+  </style>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='height=device-height, width=device-width, initial-scale=1.0'>
+  <title>Twitter Analytics Dashboard: Understand Your Tweet Query!</title>
+  <link rel='icon' type='image/x-png' href='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/282/bird_1f426.png'>
+  <link href='https://fonts.googleapis.com/css2?family=Cambria:wght@400;700&amp;display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='/assets/style.css?m=1607637617.0'>
+</head>
+
+<body style='background-color:#add8e6;margin:0'>
+  <main class='entry-point'>
+    <div>
+      <div class='header' style='background-color:#2cb037;color:#ffffff;text-shadow:2px 2px #222222;padding-bottom:35px'>
+        <p class='header-emoji' style='text-align:center;margin:0;padding-top:25px'>🐦</p>
+        <h1 class='header-title' style='text-align:center'>Twitter Analytics Dashboard</h1>
+        <p class='header-description' style='text-align:center'>
+          Providing interactive Social Network Analysis, Sentiment Analysis, and WordCloud for your Indonesian tweet query
+        </p>
+      </div>
+      <div class='menu' display='flex' style='background-color:#ffffff;text-align:center'>
+        <form method='POST' action='/result'>
+          <div class='inner-menu'>
+            <div class='input-field first-wrap'>
+              <input class='input-control' type='text' name='Keyword' placeholder='Enter your search query'>
+            </div>
+            <div class='input-field second-wrap'>
+              <input class='input-control' type='number' name='TweetCount' placeholder='Tweet amount to query'>
+            </div>
+            <div class='input-field third-wrap'>
+              <button class='btn-search' type='submit'>Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js'></script>
+  <script src="{{url_for('static',filename='assets/js/script.min.js')}}"></script>
+</body>
+
+</html>
