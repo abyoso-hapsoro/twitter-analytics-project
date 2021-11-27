@@ -1,7 +1,7 @@
-python-dotenv
+Flask
+gunicorn
 numpy
 pandas
-pandas-profiling
 matplotlib
 plotly
 wordcloud
@@ -9,9 +9,4 @@ networkx
 tweepy
 Sastrawi
 scikit-learn
-xgboost
-catboost
-Flask
-git+https://github.com/gstaff/flask-ngrok
-gunicorn
 pyyaml==5.4.1
